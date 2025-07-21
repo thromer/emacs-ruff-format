@@ -32,7 +32,7 @@
 
 (defcustom ruff-format-command "ruff"
   "Ruff command to use for formatting."
-  :type 'string
+  :type '(choice string (list string)))
   :group 'ruff-format)
 
 ;;;###autoload (autoload 'ruff-format-buffer "ruff-format" nil t)
